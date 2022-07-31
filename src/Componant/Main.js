@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import AnimatedIcon from "./AnimatedIcon";
 
 const Main = () => {
   return (
@@ -22,7 +23,7 @@ const Main = () => {
             I'm focused on building responsive front-end web applications while
             learning back-end technologies.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="lg:hidden flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
               <a href="https://www.linkedin.com/" target="blank">
                 <FaLinkedinIn />
@@ -44,6 +45,7 @@ const Main = () => {
               </a>
             </div>
           </div>
+          <AnimatedIcon/>
         </div>
       </div>
     </div>
